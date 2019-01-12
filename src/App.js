@@ -1,25 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
+import { Component } from 'react';
+import StyledElement from './components/StyledElement';
+import ChangeOnProps from './components/ChangeOnProps';
+import StyleAnyComponent from './components/StyleAnyComponent';
+import RenderedWithComponent from './components/RenderedWithComponent';
+import TargetAnotherComponent from './components/TargetAnotherComponent';
+import ObjectStyles from './components/ObjectStyles';
+import PropFowarding from './components/PropFowarding';
+import DynamicStyles from './components/DynamicStyles';
+import Composition from './components/Composition';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+          <StyledElement />
+          <ChangeOnProps />
+          <StyleAnyComponent />
+          <RenderedWithComponent />
+          <TargetAnotherComponent />
+          <ObjectStyles />
+          <PropFowarding />
+          <DynamicStyles />
+          <hr />
+          <Composition />
       </div>
     );
   }
