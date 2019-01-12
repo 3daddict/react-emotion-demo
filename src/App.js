@@ -9,6 +9,7 @@ import TargetAnotherComponent from './components/TargetAnotherComponent';
 import ObjectStyles from './components/ObjectStyles';
 import PropFowarding from './components/PropFowarding';
 import DynamicStyles from './components/DynamicStyles';
+import Composition from './components/Composition';
 
 
 class App extends Component {
@@ -23,6 +24,8 @@ class App extends Component {
           <ObjectStyles />
           <PropFowarding />
           <DynamicStyles />
+          <hr />
+          <Composition />
       </div>
     );
   }
